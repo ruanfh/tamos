@@ -1,22 +1,23 @@
-# tamos
-This ain't marketing or sales.
+# TAMOS
+This Ain't Marketing Or Sales.
+Exposing hidden gems to the rightful owners.
 
-# What
-This isn’t a marketing platform.
-This isn’t a sales channel.
+TAMOS is an open, append-only protocol and index for exposing hidden gems (resources) to their rightful owners—no marketing, no sales, just meaningful discovery.
 
-tamos is an open, structured index of products and tools, described by intent, values, and usage; so people (and machines) can find what actually fits.
+## What is TAMOS?
+See [docs/what.md](docs/what.md)
 
-Each product is just a link to whatever page it leads. And a series of tags.
-The tamos don't show top picks or anything like that.
+## Why does TAMOS exist?
+See [docs/why.md](docs/why.md)
 
-# Why
-Finding the right product or tool online is often overwhelming. Search results are dominated by marketing, ads, and popularity contests, making it hard for people to discover what truly fits their needs. At the same time, creators struggle to make their products visible to the right audience without resorting to aggressive sales tactics.
+## How does TAMOS work?
+See [docs/how.md](docs/how.md)
 
-tamos exists to solve these problems:
-- **Visibility for creators:** Anyone can list their product, making it discoverable without marketing budgets or sales tricks.
-- **Discovery for users:** People can find products based on intent, values, and real usage—not hype or paid placement.
-- **Open and structured:** Every product is described with clear, structured tags, making the index easy to search, filter, and consume—by both humans and AI.
-- **No rankings, no bias:** tamos doesn’t push top picks or favorites. It’s a neutral, open index.
+## Quick Start: Add a Gem
+Submit a new gem as a JSON object with:
+- url
+- description
+- author
+- date
 
-In short, tamos is a tagging site, not a sales site, built to help people and machines find what actually fits, in a transparent and accessible way.
+See [protocol/gem.schema.json](protocol/gem.schema.json) for the full schema and [docs/how.md](docs/how.md) for details.
