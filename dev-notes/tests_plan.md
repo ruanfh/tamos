@@ -37,12 +37,6 @@ You can fully automate endpoint testing using a test framework (e.g., pytest) an
 
 conformance/
 │
-├── README.md
-├── SPEC_REFERENCE.md
-├── schemas/
-│   ├── gem.submit.schema.json
-│   └── gem.stored.schema.json
-│
 ├── cases/
 │   ├── submissions/
 │   │   ├── valid/
