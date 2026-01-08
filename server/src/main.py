@@ -1,14 +1,11 @@
+
 from fastapi import FastAPI
+from src.routes import health
 
 app = FastAPI()
+
+app.include_router(health.router)
 
 @app.get("/")
 def read_root():
     return {"hello": "world"}
-
-def main():
-    print("Hello from server!")
-
-
-if __name__ == "__main__":
-    main()
