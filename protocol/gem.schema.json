@@ -6,8 +6,8 @@
     "url": { "type": "string", "format": "uri" },
     "description": { "type": "string" },
     "author": { "type": "string" },
-    "date": { "type": "string", "format": "date" }
+    "date": { "type": "string", "format": "date", "description": "Set by the server on submission." }
   },
-  "required": ["url", "description", "author", "date"],
+  "required": ["url", "description", "author"],
   "additionalProperties": false
 }

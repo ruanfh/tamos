@@ -10,17 +10,19 @@
 
 ## 1. Gem Definition
 
+
 A gem is the atomic unit of TAMOS.  
-It is a JSON object with **four required fields**:
+It is a JSON object with **three required fields** (the server will add the date):
 
 ```json
 {
   "url": "https://example.com",
   "description": "A concise, AI-readable summary of what makes this resource valuable.",
-  "author": "Name or identifier",
-  "date": "2026-01-07"
+  "author": "Name or identifier"
 }
 ```
+
+When a gem is submitted, the server will set the `date` field to the current date (YYYY-MM-DD) before storing and exposing it in the archive.
 
 The formal schema is defined in `gem.schema.json`.
 
