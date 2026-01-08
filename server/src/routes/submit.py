@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter, Request, status
 from fastapi.responses import JSONResponse
-from validation.gem_validator import validate_gem
+from validation.gem_validator import validate_gem_submission
 from storage.id_allocator import get_next_id
 from storage.writer import write_gem
 from datetime import date
@@ -18,7 +18,7 @@ async def submit_gem(request: Request):
 
 	# Validate only url, description, author (author optional)
 	try:
-		valid, error = validate_gem(gem)
+		valid, error = validate_gem_submission(gem)
 	except Exception as e:
 		return JSONResponse(status_code=400, content={"error": "Validation error", "details": str(e)})
 	if not valid:

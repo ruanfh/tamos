@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Gem",
+  "title": "GemStored",
   "type": "object",
   "properties": {
     "url": { "type": "string", "format": "uri" },
@@ -8,6 +8,6 @@
     "author": { "type": "string", "description": "Optional. Can be omitted or left blank." },
     "date": { "type": "string", "format": "date", "description": "Set by the server on submission." }
   },
-  "required": ["url", "description"],
+  "required": ["url", "description", "date"],
   "additionalProperties": false
 }

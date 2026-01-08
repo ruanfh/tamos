@@ -89,7 +89,7 @@ This structure keeps concerns separated and the codebase easy to navigate.
 Located in `validation/gem_validator.py`.
 
 **Responsibilities:**
-- Load the official `gem.schema.json`
+- Load the official `gem.submit.schema.json`
 - Validate incoming gems
 - Return structured errors if invalid
 

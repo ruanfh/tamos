@@ -4,7 +4,7 @@ import sys
 
 from config import get_server_url, set_server_url
 from builder import build_gem
-from validator import validate_gem
+from validator import validate_gem_submission
 from submitter import submit_gem
 
 
@@ -16,7 +16,7 @@ def cmd_submit(args):
     gem = build_gem(args)
 
     # Validate locally
-    errors = validate_gem(gem)
+    errors = validate_gem_submission(gem)
     if errors:
         print("Gem validation failed:")
         for err in errors:
@@ -31,7 +31,7 @@ def cmd_submit(args):
 def cmd_validate(args):
     """Handle `tamos validate`."""
     gem = build_gem(args)
-    errors = validate_gem(gem)
+    errors = validate_gem_submission(gem)
 
     if errors:
         print("Gem is invalid:")

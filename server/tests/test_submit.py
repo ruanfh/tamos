@@ -9,7 +9,7 @@ def test_submit_invalid(client):
     # assert "details" in data
 
 def test_submit_valid(client):
-    # Valid payload according to gem.schema.json
+    # Valid payload according to gem.submit.schema.json
     valid_payload = {
         "url": "https://example.com",
         "description": "A test gem.",

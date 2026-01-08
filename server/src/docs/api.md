@@ -44,7 +44,7 @@ The server will automatically add the `date` field when storing the gem. The `au
 
 **Validation:**
 
-The server validates the payload against `gem.schema.json`.
+The server validates the payload against `gem.submit.schema.json`.
 If invalid, the server returns:
 
 ```http
