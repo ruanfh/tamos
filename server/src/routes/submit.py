@@ -17,8 +17,12 @@ async def submit_gem(request: Request):
 		return JSONResponse(status_code=400, content={"error": "Invalid JSON"})
 
 	# Validate only url, description, author (author optional)
-	valid, error = validate_gem(gem)
+	try:
+		valid, error = validate_gem(gem)
+	except Exception as e:
+		return JSONResponse(status_code=400, content={"error": "Validation error", "details": str(e)})
 	if not valid:
+		# error is always JSON-serializable
 		return JSONResponse(status_code=400, content={"error": "Validation failed", "details": error})
 
 	# Add date field (current date, ISO format)

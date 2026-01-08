@@ -14,9 +14,12 @@ def validate_gem(gem: dict) -> (bool, dict):
 	"""
 	Validates a gem dict against the gem.schema.json.
 	Returns (True, None) if valid, (False, error_details) if invalid.
+	Always returns JSON-serializable error details.
 	"""
 	try:
 		validate(instance=gem, schema=GEM_SCHEMA)
 		return True, None
 	except ValidationError as e:
-		return False, {"error": str(e), "details": e.schema_path}
+		# Ensure details is always JSON-serializable
+		details = list(e.schema_path) if hasattr(e, 'schema_path') else str(e)
+		return False, {"error": str(e), "details": details}
