@@ -7,8 +7,6 @@ What it actually is about:
 
 TAMOS is a minimal, open protocol for publishing and discovering resources (“gems”) without marketing, manipulation, or algorithmic gate-keeping.
 
-TAMOS is append‑only: once a gem is published, it is never modified or removed; only superseded.
-
 ## Repository structure
 This repository contains both the specification for the TAMOS protocol and a reference implementation for demonstration purposes.
 Folder structure:
