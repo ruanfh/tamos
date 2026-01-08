@@ -36,10 +36,12 @@ Submit a new gem as a JSON object with:
 - author
 - date
 
-See [protocol/gem.schema.json](protocol/gem.schema.json) for the full schema and [docs/how.md](docs/how.md) for details.
+See [protocol/README.md](protocol/README.md) for details.
 
 ## Running the reference implementation
 See [src/README.md](src/README.md) for details.
+
+That implementation is TAMOS layer only, and does not specify delete or edit methods, which are strongly recommended to be implemented at the platform level.
 
 ## License
 This repository, both the protocol and the reference implementation are licensed under MIT, see [LICENSE](LICENSE) for details.
