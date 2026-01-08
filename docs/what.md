@@ -3,7 +3,7 @@ TAMOS is an open, append-only protocol and public index that helps AI and people
 ## What is a Gem?
 A "gem" is a simple, human-submitted JSON object with four required fields:
 
-```
+```json
 {
 	"url": "https://example.com",
 	"description": "A concise, AI-readable summary of what makes this resource valuable.",

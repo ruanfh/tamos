@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI
 
-from src.routes import health, submit, archive
+from routes import health, submit, archive
 
 app = FastAPI()
 

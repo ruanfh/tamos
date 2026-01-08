@@ -26,16 +26,31 @@ server/
 ```bash
 cd server/
 uv init
-uv add fastapi uvicorn
 ```
 
 # Installation in windows with uv
 ```bash
 cd server/
-uv sync
+uv pip install .
 ```
 
-# Run server
+# Installation in windows for dev
+```bash
+cd server/
+uv pip install -e .[dev]
+```
+
+# Run server (recommended)
+```bash
+uv run tamos-server
+```
+
+# Also run server
 ```bash
 uv run uvicorn src.main:app --reload
+```
+
+# Run tests
+```bash
+uv run pytest tests
 ```

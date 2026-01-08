@@ -2,9 +2,9 @@
 
 from fastapi import APIRouter, Request, status
 from fastapi.responses import JSONResponse
-from src.validation.gem_validator import validate_gem
-from src.storage.id_allocator import get_next_id
-from src.storage.writer import write_gem
+from validation.gem_validator import validate_gem
+from storage.id_allocator import get_next_id
+from storage.writer import write_gem
 from datetime import date
 
 router = APIRouter()
