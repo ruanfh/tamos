@@ -6,13 +6,18 @@ def build_gem(args) -> dict:
     Build a gem from CLI arguments or a JSON file.
     Priority:
       1. --file (load full gem)
-      2. CLI fields (description, url, tags)
+      2. CLI fields (description, url, author)
     """
 
     # 1. Load from JSON file
     if args.file:
         with open(args.file, "r", encoding="utf-8") as f:
-            return json.load(f)
+            gem = json.load(f)
+        # Remove date if present
+        gem.pop("date", None)
+        # Remove tags if present
+        gem.pop("tags", None)
+        return gem
 
     # 2. Build from CLI flags
     gem = {}
@@ -23,7 +28,7 @@ def build_gem(args) -> dict:
     if args.url:
         gem["url"] = args.url.strip()
 
-    if args.tags:
-        gem["tags"] = [t.strip() for t in args.tags]
+    if hasattr(args, "author") and args.author:
+        gem["author"] = args.author.strip()
 
     return gem

@@ -70,7 +70,7 @@ def build_parser():
     p_submit.add_argument("--server", help="Override server URL")
     p_submit.add_argument("--description", help="Gem description")
     p_submit.add_argument("--url", help="Gem URL")
-    p_submit.add_argument("--tags", nargs="*", help="List of tags")
+    p_submit.add_argument("--author", help="Gem author (optional)")
     p_submit.add_argument("--file", help="Load gem from JSON file")
     p_submit.set_defaults(func=cmd_submit)
 
@@ -78,7 +78,7 @@ def build_parser():
     p_validate = sub.add_parser("validate", help="Validate a gem locally")
     p_validate.add_argument("--description", help="Gem description")
     p_validate.add_argument("--url", help="Gem URL")
-    p_validate.add_argument("--tags", nargs="*", help="List of tags")
+    p_validate.add_argument("--author", help="Gem author (optional)")
     p_validate.add_argument("--file", help="Load gem from JSON file")
     p_validate.set_defaults(func=cmd_validate)
 
