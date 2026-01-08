@@ -12,17 +12,17 @@
 
 
 A gem is the atomic unit of TAMOS.  
-It is a JSON object with **three required fields** (the server will add the date):
+It is a JSON object with **two required fields** (the server will add the date, and author is optional):
 
 ```json
 {
   "url": "https://example.com",
-  "description": "A concise, AI-readable summary of what makes this resource valuable.",
-  "author": "Name or identifier"
+  "description": "A concise, AI-readable summary of what makes this resource valuable."
+  // "author": "Name or identifier" (optional)
 }
 ```
 
-When a gem is submitted, the server will set the `date` field to the current date (YYYY-MM-DD) before storing and exposing it in the archive.
+When a gem is submitted, the server will set the `date` field to the current date (YYYY-MM-DD) before storing and exposing it in the archive. The `author` field is optional and may be omitted or left blank.
 
 The formal schema is defined in `gem.schema.json`.
 

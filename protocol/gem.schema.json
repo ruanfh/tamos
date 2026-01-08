@@ -5,9 +5,9 @@
   "properties": {
     "url": { "type": "string", "format": "uri" },
     "description": { "type": "string" },
-    "author": { "type": "string" },
+    "author": { "type": "string", "description": "Optional. Can be omitted or left blank." },
     "date": { "type": "string", "format": "date", "description": "Set by the server on submission." }
   },
-  "required": ["url", "description", "author"],
+  "required": ["url", "description"],
   "additionalProperties": false
 }
