@@ -37,5 +37,5 @@ uv sync
 
 # Run server
 ```bash
-uv run dev
+uv run uvicorn src.main:app --reload
 ```
