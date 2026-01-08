@@ -165,4 +165,10 @@ Everything else is optional.
 
 ---
 
+## Duplicates
+
+A TAMOS node allows duplicate gems and does not attempt to detect or prevent them. This is intentional. The server is an append‑only, non‑editorial reference implementation whose sole responsibilities are validation, ID allocation, and storage. Determining whether two gems are “duplicates” is a platform‑level concern, not a protocol concern: similarity can depend on URL normalization, content semantics, author intent, or temporal context, none of which belong in the server layer. Allowing duplicates keeps the archive predictable, immutable, and easy for AI crawlers to process. Platforms built on top of TAMOS may choose to merge, collapse, rank, or annotate duplicates, but the reference server must remain neutral and accept all valid gems as submitted.
+
+---
+
 This architecture keeps the protocol small, the implementation simple, and the ecosystem open.

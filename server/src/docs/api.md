@@ -200,6 +200,12 @@ These are platform‑level concerns, not protocol concerns.
 
 ---
 
+# Duplicate Submissions
+
+The TAMOS Server accepts duplicate gems and does not attempt to detect or reject them. If a client submits a gem whose content matches an existing entry, the server still validates it, assigns the next numeric ID, and stores it as a new file in the archive. This behavior is intentional: the reference server is append‑only and non‑editorial. Determining whether two gems represent the “same” resource is a platform‑level concern, not a protocol concern, and may depend on URL normalization, semantic similarity, author intent, or temporal context. Allowing duplicates keeps the archive predictable, immutable, and easy for AI crawlers to process. Platforms built on top of TAMOS may choose to merge, collapse, or annotate duplicates, but the reference server remains neutral and accepts all valid submissions.
+
+---
+
 ## Summary
 
 The TAMOS Server API provides:
