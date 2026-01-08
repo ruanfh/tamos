@@ -1,0 +1,1 @@
+Python + FastAPI + uv (if on Windows)
