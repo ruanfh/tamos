@@ -1,6 +1,6 @@
 # Why
 
-Finding the right product or tool online is harder than it should be. Search results are dominated by marketing, ads, and popularity—not by what truly fits a person's needs. Meanwhile, many great products remain hidden, overlooked by those who would benefit most.
+Finding the right product or tool online is harder than it should be. Search results are dominated by marketing, ads, and popularity; not by what truly fits a person's needs. Meanwhile, many great products remain hidden, overlooked by those who would benefit most.
 
 TAMOS exists to:
 - Expose hidden gems to the people who need them, without marketing noise or sales pressure.

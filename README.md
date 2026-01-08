@@ -14,11 +14,16 @@ Spoiler: Nodes discover each other simply by being added as gems; no sync, no fe
 
 ## Repository structure
 This repository contains both the specification for the TAMOS protocol and a reference implementation for demonstration purposes.
-Folder structure:
+
+### Folder structure
 - protocol/ -> the specification
-- src/ -> the reference implementation
-- examples/ -> sample manifests
+- reference/ -> the reference implementation (TAMOS can be as simple as a folder with JSON files maintained manually)
+- server/ -> an API implementation
+- client/ -> a simple cli for any TAMOS API
 - docs/ -> conceptual docs (what/why/how/who)
+
+## Terminology
+See [protocol/glossary.md](protocol/glossary.md)
 
 ## What is TAMOS?
 See [docs/what.md](docs/what.md)
@@ -32,22 +37,31 @@ See [docs/how.md](docs/how.md)
 ## Who is TAMOS for?
 See [docs/who.md](docs/who.md)
 
-## Quick Start: Add a Gem
+## Quick Start
 Submit a new gem as a JSON object with:
 - url
 - description
-- author
+- author (optional, can be an email)
+The node must fill the date
 - date
+
+Make it public. That's it.
+
+People can start referencing the archive in their AI chats and AI will do the rest.
 
 See [protocol/README.md](protocol/README.md) for details.
 
 ## Running the reference implementation
-See [src/README.md](src/README.md) for details.
+See [server/README.md](server/README.md) for details.
 
 That implementation is TAMOS layer only, and does not specify delete or edit methods, which are strongly recommended to be implemented at the platform level.
 
 ## License
 This repository, both the protocol and the reference implementation are licensed under MIT, see [LICENSE](LICENSE) for details.
+
+Note: The MIT license applies to the protocol specification and reference
+implementation. It does not apply to user-generated archives or data
+produced by implementations of the protocol.
 
 ## Contributions
 Contributions are welcome, but the protocol is still stabilizing. Feel free to open issues for discussion.

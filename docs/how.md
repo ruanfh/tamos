@@ -20,7 +20,14 @@ TAMOS itself remains neutral, lightweight, and open. It does not rank, filter, o
 
 ## What is a Gem?
 
-A "gem" is a single JSON object with four required fields:
+| Field        | Required | Set By   | Description                                                      |
+|--------------|----------|----------|------------------------------------------------------------------|
+| url          | Yes      | User     | Link to the resource (must be a valid URL)                       |
+| description  | Yes      | User     | Concise, AI-readable summary of what makes the resource valuable |
+| author       | Optional | User     | Name or identifier of the submitter                              |
+| date         | Auto     | Node     | Date the gem was published (YYYY-MM-DD), set by the node         |
+
+Example of a gem as stored in the archive:
 
 ```json
 {
@@ -31,7 +38,7 @@ A "gem" is a single JSON object with four required fields:
 }
 ```
 
-The description is written for AI crawlers to discover and understand the resource. There is no need for tags or complex metadata—AI search will do the heavy lifting.
+The description is written for AI crawlers to discover and understand the resource. There is no need for tags or complex metadata; AI search will do the heavy lifting.
 
 ## Protocol Rules
 

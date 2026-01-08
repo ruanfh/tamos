@@ -1,13 +1,23 @@
-TAMOS is an open, append-only protocol and public index that helps AI and people discover what truly matters—no ads, no engagement algorithms, just meaningful discovery.
+# What TAMOS is
+
+TAMOS is an open, append-only protocol and public index that helps AI and people discover what truly matters; no ads, no engagement algorithms, just meaningful discovery.
 
 ## What is a Gem?
-A "gem" is a simple, human-submitted JSON object with four required fields:
+A "gem" is a simple, human-submitted JSON object with two required fields:
 
 ```json
 {
 	"url": "https://example.com",
 	"description": "A concise, AI-readable summary of what makes this resource valuable.",
-	"author": "Name or identifier",
+}
+```
+
+The stored gem will also have a date provided by the node.
+
+```json
+{
+	"url": "https://example.com",
+	"description": "A concise, AI-readable summary of what makes this resource valuable.",
 	"date": "YYYY-MM-DD"
 }
 ```
