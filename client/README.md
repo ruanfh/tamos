@@ -5,7 +5,6 @@
 
 ```bash
 cd client/
-uv venv
 uv pip install -e .
 ```
 
@@ -31,6 +30,22 @@ uv run tamos config set-server http://localhost:8000
 uv run tamos config show
 ```
 
+# For devs
+
+## Install
+```bash
+cd client/
+uv pip install -e .[dev]
+```
+
+## Running tests
+
+To run all client tests:
+
+```bash
+cd client/
+uv run pytest tests
+```
 
 # Folder structure
 ```text
