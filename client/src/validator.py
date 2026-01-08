@@ -2,7 +2,7 @@ import json
 from jsonschema import Draft7Validator
 from pathlib import Path
 
-SCHEMA_PATH = Path(__file__).parent / "gem.schema.json"
+SCHEMA_PATH = Path(__file__).resolve().parents[2] / "protocol" / "gem.schema.json"
 
 
 def load_schema():
