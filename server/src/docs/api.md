@@ -29,16 +29,18 @@ POST /submit
 Content-Type: application/json
 ```
 
+
 **Body:**
 
 ```json
 {
   "url": "https://example.com/resource",
-  "description": "A short description of the resource.",
-  "author": "Name or handle",
-  "date": "2026-01-08"
+  "description": "A short description of the resource."
+  // "author": "Name or handle" (optional)
 }
 ```
+
+The server will automatically add the `date` field when storing the gem. The `author` field is optional and may be omitted or left blank.
 
 **Validation:**
 
