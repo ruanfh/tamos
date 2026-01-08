@@ -62,3 +62,23 @@ This is encouraged but it's a second layer that TAMOS it self doesn't cover.
 TAMOS is not responsible for what gems are posted. TAMOS does not care about the content of gems and does not enforce any kind of policy or moderation. The protocol is neutral and open by design.
 
 However, TAMOS does not restrict nodes or platforms from enforcing their own restrictions, moderation, or policies. Each node or platform is free to implement any rules or controls they see fit, independently of the protocol itself.
+
+## Node Discovery
+
+> TAMOS does not define a sync protocol, federation layer, or node‑to‑node communication. It doesn’t need to.
+
+- A TAMOS node is just another URL.
+- A URL is just another gem.
+- Therefore, nodes discover each other simply by being added as gems.
+- If a platform wants to index another node, it publishes a gem pointing to that node’s archive.
+- AI crawlers follow these links naturally, building a global, emergent network of TAMOS archives without any additional protocol surface area.
+
+**This keeps TAMOS radically simple:**
+
+- No federation
+- No sync
+- No consensus
+- No replication
+- No complexity
+
+**Just gems.**

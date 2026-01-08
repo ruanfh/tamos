@@ -1,11 +1,16 @@
 # TAMOS
 
-TAMOS stand for: This Ain't Marketing Or Sales.
-Or TAMOS Ain't Marketing Or Sales, if you will.
-What it actually is about:
-- Exposing hidden gems to the rightful owners.
+TAMOS stands for: This Ain’t Marketing Or Sales.
+Or, if you prefer recursion: TAMOS Ain’t Marketing Or Sales.
 
-TAMOS is a minimal, open protocol for publishing and discovering resources (“gems”) without marketing, manipulation, or algorithmic gate-keeping.
+What it is about is simple:
+- Exposing hidden gems to the people who actually need them; with AI doing the heavy lifting.
+
+TAMOS is a minimal, open protocol for publishing and discovering resources (“gems”) without marketing, manipulation, or algorithmic gate‑keeping.
+It’s designed for humans to publish and for AI to explore, connect, and surface what matters.
+
+Spoiler: Nodes discover each other simply by being added as gems; no sync, no federation, no extra protocol. AI follows the links and builds the network.
+
 
 ## Repository structure
 This repository contains both the specification for the TAMOS protocol and a reference implementation for demonstration purposes.
