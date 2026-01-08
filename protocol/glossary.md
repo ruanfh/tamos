@@ -1,0 +1,11 @@
+# Glossary
+- Gem → the atomic JSON object submitted to TAMOS
+- Archive → the append‑only collection of gem entries
+- Entry → a gem as stored in the archive, including node‑assigned metadata
+- Submission → the act of adding a gem to an archive
+- Append → the only protocol-defined operation; adding a new entry
+- Node → a server that hosts an archive and exposes it publicly
+- Schema → the formal definition of a gem’s required structure
+- Client → any system that reads from or submits to a node
+- Crawler → an AI or system that reads archives for discovery or analysis
+- Platform → an application built on top of TAMOS that adds features beyond the protocol
