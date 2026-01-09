@@ -21,8 +21,6 @@ A server that hosts an archive and exposes it publicly.
 ## Schema
 The formal definition of a gem’s structure.
 
-TAMOS uses two: the submission schema (what clients send) and the storage schema (how nodes store entries).
-
 ## Client
 A system that submits gems to a node.
 
