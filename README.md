@@ -63,8 +63,13 @@ Note: The MIT license applies to the protocol specification and reference
 implementation. It does not apply to user-generated archives or data
 produced by implementations of the protocol.
 
-## Contributions
-Contributions are welcome, but the protocol is still stabilizing. Feel free to open issues for discussion.
+## Contribution Policy
+
+Issues are enabled for questions, clarifications, and general feedback.
+Responses are not guaranteed, and issues may be closed without action.
+Pull requests are not accepted.
+
+See [CONTRIBUTING.md.md](CONTRIBUTING.md) for details.
 
 ## Status
 Early draft (v0.x). Expect changes.
