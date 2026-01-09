@@ -33,7 +33,7 @@ A system (including AI) that reads archives for discovery or analysis.
 An application built on top of TAMOS that adds features beyond the protocol.
 
 ## TIG
-TAMOS Input Gate.
+TAMOS Input Gate define how a Node accepts Gems from Clients.
 
 ## TOG
-TAMOS Output Gate.
+TAMOS Output Gate define how a Node exposes its Archives to Consumers.

@@ -16,10 +16,10 @@ Spoiler: Nodes discover each other simply by being added as gems; no sync, no fe
 This repository contains both the specification for the TAMOS protocol and a reference implementation for demonstration purposes.
 
 ### Folder structure
-- protocol/ -> the specification
+- protocol/ -> the protocol specification
 - reference/ -> the reference implementation (TAMOS can be as simple as a folder with JSON files maintained manually)
 - server/ -> an API implementation
-- client/ -> a simple cli for any TAMOS API
+- client/ -> a simple cli for the implemented TAMOS API
 - docs/ -> conceptual docs (what/why/how/who)
 
 ## Terminology
@@ -54,6 +54,12 @@ See [protocol/SPEC.md](protocol/SPEC.md) for details.
 See [server/README.md](server/README.md) for details.
 
 That implementation is TAMOS layer only, and does not specify delete or edit methods, which are strongly recommended to be implemented at the platform level.
+
+## Gates
+
+TAMOS defines optional Input and Output Gates that describe how a Node accepts Gems (TIG) and exposes Archives (TOG).
+
+See [docs/gates.md](docs/gates.md) for details.
 
 ## License
 This repository, both the protocol and the reference implementation are licensed under MIT, see [LICENSE](LICENSE) for details.
