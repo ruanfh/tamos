@@ -65,11 +65,7 @@ produced by implementations of the protocol.
 
 ## Contribution Policy
 
-Issues are enabled for questions, clarifications, and general feedback.
-Responses are not guaranteed, and issues may be closed without action.
-Pull requests are not accepted.
-
-See [CONTRIBUTING.md.md](CONTRIBUTING.md) for details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## Status
 Early draft (v0.x). Expect changes.
