@@ -23,7 +23,7 @@ This repository contains both the specification for the TAMOS protocol and a ref
 - docs/ -> conceptual docs (what/why/how/who)
 
 ## Terminology
-See [protocol/glossary.md](protocol/glossary.md)
+See [docs/glossary.md](docs/glossary.md)
 
 ## What is TAMOS?
 See [docs/what.md](docs/what.md)
@@ -38,20 +38,19 @@ See [docs/how.md](docs/how.md)
 See [docs/who.md](docs/who.md)
 
 ## Quick Start
+
 Submit a new gem as a JSON object with:
 - url
 - description
-- author (optional, can be an email)
-The node must fill the date
-- date
+- author (optional)
 
 Make it public. That's it.
 
 People can start referencing the archive in their AI chats and AI will do the rest.
 
-See [protocol/README.md](protocol/README.md) for details.
+See [protocol/SPEC.md](protocol/SPEC.md) for details.
 
-## Running the reference implementation
+## Running the server implementation
 See [server/README.md](server/README.md) for details.
 
 That implementation is TAMOS layer only, and does not specify delete or edit methods, which are strongly recommended to be implemented at the platform level.

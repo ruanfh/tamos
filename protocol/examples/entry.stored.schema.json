@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "GemStored",
+  "title": "EntryStored",
   "type": "object",
   "properties": {
     "url": { "type": "string", "format": "uri" },
