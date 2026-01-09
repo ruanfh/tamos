@@ -25,9 +25,6 @@ This repository contains both the specification for the TAMOS protocol and a ref
 ## Terminology
 See [docs/glossary.md](docs/glossary.md)
 
-## What is TAMOS?
-See [docs/what.md](docs/what.md)
-
 ## Why does TAMOS exist?
 See [docs/why.md](docs/why.md)
 
