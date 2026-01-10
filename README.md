@@ -2,7 +2,12 @@
 
 ## What TAMOS is
 TAMOS is an acronym meaning: This Ain’t Marketing Or Sales.  
-Or, if you prefer recursion: TAMOS Ain’t Marketing Or Sales.
+> Other expansions are informal and non-normative.
+
+Or, if you prefer recursion: TAMOS Ain’t Marketing Or Sales.  
+Or, if you want it to, just: TAMOS Assists Marketing Or Sales!
+
+> TAMOS does not perform marketing or sales; it provides discovery and publishing primitives that may be used by marketing, sales, or non-commercial systems.
 
 TAMOS is a minimal, open protocol for publishing and discovering small, meaningful resources (“gems”).  
 It exists to let people expose what they consider valuable, and to let external AI systems do the heavy lifting of exploration, connection, and discovery.
@@ -12,9 +17,7 @@ See the example Archive in [reference](reference).
 
 TAMOS is intentionally small.
 
-Spoiler: Nodes discover each other simply by being added as gems.  
-No sync. No federation. No extra protocol.  
-AI follows the links and builds the network.
+Spoiler: Nodes can discover each other simply by being added as gems.
 
 ## What TAMOS is not
 

@@ -16,7 +16,7 @@ A client’s request to add a gem to an archive.
 The node’s act of turning the submitted gem as a new entry.
 
 ## Node
-A server that hosts an archive and exposes it publicly.
+A server that hosts an archive and exposes it.
 
 ## Schema
 The formal definition of a gem’s structure.
@@ -31,8 +31,7 @@ A system (including AI) that reads archives for discovery or analysis.
 An application built on top of TAMOS that adds features beyond the protocol.
 
 ## Gate
-
-Gates define optional interfaces for how nodes accept and expose gems.
+Gates define optional interfaces for how nodes accept gems and expose archives.
 
 ## TIG
 TAMOS Input Gate, defines how a Node accepts Gems from Clients.
