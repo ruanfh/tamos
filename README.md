@@ -35,10 +35,11 @@ This repository contains both the specification for the TAMOS protocol and a ref
 ### Folder structure
 
 - protocol/ -> the protocol specification
-- reference/ -> the reference implementation
+- reference/ -> the TAMOS-1x1 reference implementation
 - server/ -> an API implementation (TAMOS-2x2)
-- client/ -> a simple cli for the implemented TAMOS API (TAMOS-2x2)
-- docs/ -> conceptual docs
+- client/ -> a simple CLI for the TAMOS‑2x2 API
+- docs/ -> conceptual documentation
+- dev-notes/ -> drafts, brainstorming and internal notes
 
 ## Terminology
 

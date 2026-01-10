@@ -1,3 +1,3 @@
 # Notes
 
-This folder contains drafts, brainstorms, and personal notes related to TAMOS.
+This folder contains drafts, brainstorming, and internal notes.
