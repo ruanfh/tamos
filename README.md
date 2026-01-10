@@ -1,6 +1,6 @@
 # TAMOS
 
-## What is TAMOS
+## What TAMOS is
 TAMOS is an acronym meaning: This Ain’t Marketing Or Sales.  
 Or, if you prefer recursion: TAMOS Ain’t Marketing Or Sales.
 
@@ -88,6 +88,10 @@ produced by implementations of the protocol.
 ## Contribution Policy
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## Security Policy
+
+See [SECURITY.md](SECURITY.md) for details.
 
 ## Status
 
