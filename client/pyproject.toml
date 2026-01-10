@@ -1,13 +1,16 @@
 [project.optional-dependencies]
 dev = [
-    "pytest",
-    "requests-mock"
+    "pytest"
+    ,"requests-mock"
+    ,"pip-licenses"
 ]
+
 [project]
-name = "client"
+name = "tamos-client"
 version = "0.1.0"
-description = "Add your description here"
+description = "CLI client for TAMOS-2x2 protocol"
 readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.12"
 dependencies = [
     "jsonschema>=4.26.0",

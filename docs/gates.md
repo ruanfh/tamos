@@ -71,7 +71,7 @@ This is the most transparent and durable output mechanism.
 
 A Node is defined by its combination of one TIG and one TOG.
 
-| TIG / TOG       | TOG-1: Static Folder | TOG-2: Read API |
+| TIG \ TOG       | TOG-1: Static Folder | TOG-2: Read API |
 | --------------- | -------------------- | --------------- |
 | TIG-1: Manual   | TAMOS-1x1            | TAMOS-1x2       |
 | TIG-2: API      | TAMOS-2x1            | TAMOS-2x2       |

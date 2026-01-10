@@ -1,8 +1,9 @@
 [project]
-name = "server"
+name = "tamos-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "Server implementation for TAMOS-2x2 protocol"
 readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.128.0",
@@ -11,9 +12,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pytest",
-    "httpx"
+    "pytest"
+    ,"httpx"
     ,"python-dotenv"
+    ,"pip-licenses"
 ]
 
 [project.scripts]
