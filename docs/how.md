@@ -26,7 +26,7 @@ TAMOS itself remains neutral, lightweight, and open. It does not rank, filter, o
 | description | Yes      | Concise, AI-readable summary of what makes the resource valuable |
 | author      | Optional | Name or identifier of the submitter                              |
 
-Example of a gem as stored in the archive:
+Example of a Gem as stored in the Archive:
 
 ```json
 {
@@ -36,7 +36,7 @@ Example of a gem as stored in the archive:
 }
 ```
 
-The description is written for AI crawlers to discover and understand the resource. There is no need for tags or complex metadata; AI search will do the heavy lifting.
+The description is written for AI Consumers to discover and understand the resource. There is no need for tags or complex metadata; AI search will do the heavy lifting.
 
 ## TAMOS vs. Platform Responsibilities
 

@@ -5,24 +5,28 @@ TAMOS is an acronym meaning: This Ain’t Marketing Or Sales.
 Or, if you prefer recursion: TAMOS Ain’t Marketing Or Sales.
 
 TAMOS is a minimal, open protocol for publishing and discovering small, meaningful resources (“gems”).  
-It exists to let people expose what they consider valuable; and to let external AI systems do the heavy lifting of exploration, connection, and discovery.
+It exists to let people expose what they consider valuable, and to let external AI systems do the heavy lifting of exploration, connection, and discovery.
 
 TAMOS can be as simple as a folder with JSON files maintained manually.  
-Like the example Archive in [reference](reference).
+See the example Archive in [reference](reference).
+
+TAMOS is intentionally small.
 
 Spoiler: Nodes discover each other simply by being added as gems.  
 No sync. No federation. No extra protocol.  
 AI follows the links and builds the network.
 
-TAMOS is intentionally small.  
-
 ## What TAMOS is not
 
-TAMOS is not a platform, a service, a network, or a product.  
-It doesn’t sync, federate, or coordinate anything.  
+TAMOS is not a platform, a service, a network, or a product.
+
+It doesn’t sync, federate, or coordinate anything.
+
 It makes no guarantees about security, ranking, moderation, or trust.
 
 TAMOS doesn’t try to do marketing or sales; but if someone wants to use gems that way, the protocol won’t get in their way.
+
+TAMOS does not define safety, trust, or correctness.
 
 ## Repository structure
 
@@ -40,6 +44,29 @@ This repository contains both the specification for the TAMOS protocol and a ref
 
 See [docs/glossary.md](docs/glossary.md)
 
+## Quick Start
+
+Submit a new gem as a JSON object with:
+- url
+- description
+- author (optional)
+
+Make it public. That's it.
+
+People can start referencing the Archive in their AI chats and AI will do the rest.
+
+See [protocol/SPEC.md](protocol/SPEC.md) for details.
+
+Implementers are free to add optional fields or conventions as long as core gem requirements remain intact.
+
+Example of a gem:
+```json
+{
+  "url": "https://example.com/",
+  "description": "A useful resource to put in documentation."
+}
+```
+
 ## Why does TAMOS exist?
 
 See [docs/why.md](docs/why.md)
@@ -52,26 +79,15 @@ See [docs/how.md](docs/how.md)
 
 See [docs/who.md](docs/who.md)
 
-## Quick Start
-
-Submit a new gem as a JSON object with:
-- url
-- description
-- author (optional)
-
-Make it public. That's it.
-
-People can start referencing the archive in their AI chats and AI will do the rest.
-
-See [protocol/SPEC.md](protocol/SPEC.md) for details.
-
 ## Running the server implementation
 
 See [server/README.md](server/README.md) for details.
 
-That implementation is TAMOS layer only, and does not specify delete or edit methods, which are strongly recommended to be implemented at the platform level.
+That implementation is TAMOS layer only: it does not specify delete or edit methods, which are strongly recommended to be implemented at the Platform level.
 
 ## Gates
+
+Gates define optional interfaces for how nodes accept and expose gems.
 
 TAMOS defines optional Input and Output Gates that describe how a Node accepts Gems (TIG) and exposes Archives (TOG).
 
@@ -82,8 +98,10 @@ See [docs/gates.md](docs/gates.md) for details.
 This repository, both the protocol and the reference implementation are licensed under MIT, see [LICENSE](LICENSE) for details.
 
 Note: The MIT license applies to the protocol specification and reference
-implementation. It does not apply to user-generated archives or data
+implementation. It does not apply to user-generated Archives or data
 produced by implementations of the protocol.
+
+Implementers retain full ownership of their own Archives.
 
 ## Contribution Policy
 

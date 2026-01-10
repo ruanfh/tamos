@@ -30,6 +30,10 @@ A system (including AI) that reads archives for discovery or analysis.
 ## Platform
 An application built on top of TAMOS that adds features beyond the protocol.
 
+## Gate
+
+Gates define optional interfaces for how nodes accept and expose gems.
+
 ## TIG
 TAMOS Input Gate, defines how a Node accepts Gems from Clients.
 
