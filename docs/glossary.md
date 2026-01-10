@@ -13,7 +13,7 @@ A gem as stored in the archive, including node‑assigned metadata.
 A client’s request to add a gem to an archive.
 
 ## Append
-The node’s act of adding the submitted gem as a new entry.
+The node’s act of turning the submitted gem as a new entry.
 
 ## Node
 A server that hosts an archive and exposes it publicly.

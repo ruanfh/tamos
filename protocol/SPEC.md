@@ -49,8 +49,10 @@ The structure and organization of an Archive are Node‑defined.
 - A Node **MUST** provide an append mechanism that accepts Gems.
 - A Node **MUST** transform each submitted Gem into an Entry.
 - A Node **MUST** expose Entries through one or more Archives.
+- A Node **MUST** preserve the Gem’s structure exactly as submitted.
+- A Node **MAY** modify the values inside that structure.
 - A Node **MAY** add metadata to Entries.
-- A Node **MAY** edit or delete Entries.
+- A Node **MAY** edit or delete Entries, but such edits **MUST NOT** alter the Gem’s structure.
 - A Node **MAY** organize Archives in any structure.
 
 ### 4.3 Consumer Requirements
