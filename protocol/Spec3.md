@@ -78,6 +78,8 @@ A TAMOS‑Garden supports editable Stars.
 #### 3.3.1 Constellation
 A constellation is a group of stars.
 
+---
+
 ## 4 The TAMOS protocol
 
 ### 4.1 Core Protocol
@@ -96,11 +98,76 @@ A constellation is a group of stars.
 - A Sky **MAY** define an ordering for the Stars it serves. TAMOS does not define or constrain ordering semantics.
 - Stars **MAY** be explored by any means, including programmatic access, file access, human inspection, automated scripts, or AI agents. TAMOS does not define or constrain exploration mechanisms.
 
+
 ### 4.3 Profile Behaviors
 
-TAMOS implementations MUST operate under exactly one Profile.
-Each Profile specifies the allowed use of East‑Horizon and West‑Horizon.
+A TAMOS implementation **MUST** operate under exactly one Profile. The active Profile **MUST** be declared and enforced.
 
-- TAMOS‑Archive: West‑Horizon is not permitted.
-- TAMOS‑Field: East‑Horizon and West‑Horizon are permitted; editing is not permitted.
-- TAMOS‑Garden: Editing is permitted, defined as an atomic West‑Horizon followed by East‑Horizon.
+Profiles define the only permitted uses of the East‑Horizon and West‑Horizon. Any operation not explicitly permitted by the active Profile **MUST NOT** be performed.
+
+#### 4.3.1 TAMOS‑Archive Profile
+
+An implementation operating under the **TAMOS‑Archive** Profile:
+
+- **MUST** permit use of the East-Horizon.
+- **MUST NOT** permit use of the West‑Horizon.
+- **MUST NOT** permit replacement or editing in any form.
+
+This Profile is append‑only and immutable.
+
+#### 4.3.2 TAMOS‑Field Profile
+
+An implementation operating under the **TAMOS‑Field** Profile:
+
+- **MUST** permit use of the East-Horizon.
+- **MUST** permit use of the West‑Horizon.
+- **MUST NOT** permit replacement or editing.
+- **MUST** assign a stable identifier to each Star.
+- **MUST NOT** reuse or reassign the Star’s identifier after removal.
+
+Deletion removes a Star entirely. Any subsequent cast produces a new Star.
+
+#### 4.3.3 TAMOS‑Garden Profile
+
+An implementation operating under the **TAMOS‑Garden** Profile:
+
+- **MUST** permit use of the East-Horizon.
+- **MUST** permit use of the West‑Horizon.
+- **MUST** permit replacement.
+- **MUST** assign a stable identifier to each Star.
+
+Replacement **MUST** be implemented as a single atomic operation that preserves the Star’s identifier.
+The operation consists conceptually of:
+
+1. Removing the existing Star.
+2. Casting a new Star in its place.
+
+No intermediate state may be externally observable.
+
+---
+
+## 5 Conformance
+
+A TAMOS implementation is conformant only as one of the following:
+
+- **TAMOS‑Archive**
+- **TAMOS‑Field**
+- **TAMOS‑Garden**
+
+All conformant implementations **MUST** implement the Core Protocol defined in [Section 4.1](#41-core-protocol) and **MUST** operate under exactly one Profile defined in [Section 3.2](#32-required-profile-terms).
+
+### 5.1 TAMOS‑Archive Conformance
+
+An implementation claiming TAMOS‑Archive conformance **MUST** follow the Archive Profile Behaviors defined in [Section 4.3](#43-profile-behaviors).
+
+### 5.2 TAMOS‑Field Conformance
+
+An implementation claiming TAMOS‑Field conformance **MUST** follow the Field Profile Behaviors defined in [Section 4.3](#43-profile-behaviors).
+
+### 5.3 TAMOS‑Garden Conformance
+
+An implementation claiming TAMOS‑Garden conformance **MUST** follow the Garden Profile Behaviors defined in [Section 4.3](#43-profile-behaviors).
+
+### 5.4 Optional Behaviors
+
+Optional Behaviors defined in [Section 4.2](#42-optional-behaviors) **MAY** be implemented by any conformant implementation.
