@@ -142,4 +142,4 @@ Implementers and deployers are responsible for assessing risks, protecting their
 
 ## 12. Examples (Non-Normative)
 
-This specification may include non-normative examples of Gems, Stars, Constellations, and Skies to illustrate typical usage patterns. Examples are provided for clarity only and do not define additional requirements or constraints beyond those explicitly stated in the normative sections of this document.
+Examples are for illustration only and do not define requirements or constraints.
