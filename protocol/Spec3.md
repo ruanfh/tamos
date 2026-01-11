@@ -92,10 +92,11 @@ A constellation is a group of stars.
 
 - A Star **MAY** include additional fields added by the implementation, provided the submitted Gem remains intact and unaltered.
 - An implementation **MAY** provide an edit operation, defined as an atomic composition of West‑Horizon followed by East‑Horizon.
-- A Sky **MAY** assign identifiers to Stars for its own purposes. TAMOS does not define or constrain identifier format, stability, or semantics.
+- An implementation **MAY** assign identifiers to Stars for its own purposes. TAMOS does not define or constrain identifier format, stability, or semantics.
 - A Sky **MAY** define an ordering for the Stars it serves. TAMOS does not define or constrain ordering semantics.
+- Stars **MAY** be explored by any means, including programmatic access, file access, human inspection, automated scripts, or AI agents. TAMOS does not define or constrain exploration mechanisms.
 
-### 4.2 Profile Behaviors
+### 4.3 Profile Behaviors
 
 TAMOS implementations MUST operate under exactly one Profile.
 Each Profile specifies the allowed use of East‑Horizon and West‑Horizon.
