@@ -3,7 +3,9 @@
 
 ## 1. Status
 
-This specification defines the TAMOS protocol in its current form. It is **experimental** and may change without notice. Implementations should expect breaking changes and should not assume long-term stability or backward compatibility unless explicitly stated in a future revision of this document.
+This specification defines the TAMOS protocol in its current form.  
+It is **experimental** and may change without notice.  
+Implementations should expect breaking changes and should not assume long-term stability or backward compatibility unless explicitly stated in a future revision of this document.
 
 ## 2. Terminology
 
@@ -40,8 +42,7 @@ This specification uses the following terms in a precise, technical way.
 
 - **Star:**
 	- The published representation created by the Horizon from a Gem. A Star exists after casting.
-	- A Star **MUST** include the Gem exactly as submitted, without modification, and **MAY** have additional fields outside the Gem.
-	- A Star **MAY** have additional fields outside the Gem.
+	- A Star **MUST** contain the original Gem, unchanged, and **MAY** also have extra fields added.
 	- A Star **MUST NOT** be modified after casting.
 	- A Star **MAY** be permanently deleted via the West Horizon.
 
