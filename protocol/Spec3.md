@@ -171,3 +171,35 @@ An implementation claiming TAMOS‑Garden conformance **MUST** follow the Garden
 ### 5.4 Optional Behaviors
 
 Optional Behaviors defined in [Section 4.2](#42-optional-behaviors) **MAY** be implemented by any conformant implementation.
+
+---
+
+## 6 Security Considerations
+
+TAMOS provides **no security guarantees** of any kind.
+
+All security concerns **MUST** be defined by the implementation.
+
+---
+
+## 7 Error Handling
+
+TAMOS does **not** define any error conditions or error‑handling semantics.
+
+Any behavior resulting from invalid input, malformed Stars, unavailable Horizons, or implementation‑specific failures is **entirely outside the scope** of this specification and **MUST** be defined by the implementation.
+
+---
+
+## 8 Interoperability Considerations
+
+TAMOS does **not** define any interoperability requirements between independent implementations.
+
+Any behavior involving federation, replication, migration, synchronization, or cross‑Sky interaction is **outside the scope** of this specification and **MUST** be defined by the participating implementations.
+
+---
+
+## 9 Versioning
+
+TAMOS does **not** define how different versions of TAMOS should interact.
+
+If an implementation needs rules for compatibility or version negotiation, it **MUST** define them itself.
