@@ -19,12 +19,12 @@ If something is not in the spec, it is not TAMOS.
 ## Repository
 
 ```text
-protocol/         -> TAMOS protocol specification (authoritative)
-constellations/   -> Example archive (non-normative)
-server/           -> Example API implementation
-client/           -> Example CLI
-docs/             -> Conceptual notes
-dev-notes/        -> Drafts and internal material
+protocol/  -> TAMOS protocol specification (authoritative)
+sky/       -> Example TAMOS-Garden (non-normative)
+server/    -> Example TAMOS-Archive API implementation
+client/    -> Example TAMOS-Archive CLI
+docs/      -> Conceptual notes
+dev-notes/ -> Drafts and internal material
 ```
 
 Only `protocol/` is normative.
