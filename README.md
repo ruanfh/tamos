@@ -34,6 +34,10 @@ Only `protocol/` is normative.
 Early draft (v0.x).
 Expect changes.
 
+## Why
+
+See [docs/why.md](docs/why.md) (non-normative).
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
