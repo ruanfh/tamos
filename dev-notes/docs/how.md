@@ -1,7 +1,7 @@
 
 # How TAMOS Works
 
-TAMOS is designed to expose hidden gems—valuable resources—through a simple, open protocol. Here’s how it works:
+TAMOS is designed to expose hidden gems (valuable resources) through a simple, open protocol. Here’s how it works:
 
 ## Who Contributes What?
 
