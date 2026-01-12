@@ -1,18 +1,31 @@
-# Why
+# Why TAMOS Exists
 
-Finding the right product or tool online is harder than it should be. Search results are dominated by marketing, ads, and popularity; not by what truly fits a person's needs. Meanwhile, many great products remain hidden, overlooked by those who would benefit most.
+Discovering relevant tools, resources, or products on the internet often requires navigating large amounts of unstructured information. While search engines and crawlers can retrieve content efficiently, they primarily operate on raw documents and links, without understanding which resources a person intentionally considers meaningful or worth sharing.
 
-TAMOS exists to:
-- Expose hidden gems to the people who need them, without marketing noise or sales pressure.
-- Give creators a fair chance to be discovered, regardless of budget or hype.
-- Provide a neutral, open, and structured index—so both people and machines can find products based on intent, values, and real usage.
-- Make discovery transparent, description-driven, and accessible, with no rankings or bias.
+TAMOS exists to provide a minimal, structured way to expose resources for exploration. It allows publishers to explicitly present what they consider relevant, and allows explorers to navigate those resources without relying on implicit signals such as popularity, ranking, or advertising.
 
-In short, TAMOS is about connecting the right people to the right tools, in a way that's open, fair, and easy to navigate.
+TAMOS does not attempt to replace crawling or indexing. Instead, it complements them by introducing explicit structure and intent.
 
+---
 
-# Why TAMOS Exists Even When Crawling Is Possible
+# Why Structure Matters
 
-Although any website can be crawled, crawling alone cannot provide the clarity, intent, or structure that TAMOS offers. Crawlers extract raw content, but they cannot reliably determine what a human considers important, meaningful, or worth sharing.
+A URL alone provides access to content, but not context. Without additional structure, each resource is isolated and indistinguishable from any other.
 
-In short, crawling reveals what exists; TAMOS reveals what’s important.
+In TAMOS, **Stars** are made discoverable by being placed within a **Sky** and grouped into **Constellations**. This grouping is intentional and explicit:
+
+- **Sky**: Defines the environment in which Stars are exposed for exploration.
+- **Constellations**: Group related Stars, providing contextual boundaries.
+
+Together, they transform a collection of independent URLs into an explorable space.
+
+Exploration in TAMOS is not based on ranking or traversal heuristics, but on explicit grouping and exposure defined by the publisher.
+
+---
+
+# Crawling vs. TAMOS
+
+- **Crawling** reveals what exists.
+- **TAMOS** reveals what has been intentionally exposed and how it is grouped.
+
+By separating raw availability from intentional publication, TAMOS enables clearer discovery, simpler exploration, and more predictable behavior for both humans and machines.
