@@ -2,32 +2,30 @@
 
 TAMOS is defined by the specification in [protocol/SPEC.md](protocol/SPEC.md).
 
+> Only [protocol/SPEC.md](protocol/SPEC.md) and [protocol/gem.submit.schema.json](protocol/gem.submit.schema.json) are authoritative.
+
 This repository exists to host:
 - The TAMOS protocol specification
 - Non-normative reference material and implementations
 
 ## Scope
 
-TAMOS is a minimal protocol for publishing small, meaningful resources.
+TAMOS is a minimal protocol meant for revealing small, meaningful resources for machines to later explore.
 
 It defines concepts and rules only.
 
 It does not define platforms, services, networks, guarantees, or behavior beyond what is explicitly stated in the specification.
 
-If something is not in the spec, it is not TAMOS.
-
 ## Repository
 
 ```text
-protocol/  -> TAMOS protocol specification (authoritative)
-sky/       -> Example TAMOS-Garden (non-normative)
-server/    -> Example TAMOS-Archive API implementation
-client/    -> Example TAMOS-Archive CLI
+protocol/  -> TAMOS protocol specification
+sky/       -> Example folder containing JSON files
+server/    -> Example API implementation
+client/    -> Example CLI
 docs/      -> Conceptual notes
 dev-notes/ -> Drafts and internal material
 ```
-
-Only `protocol/` is normative.
 
 ## Status
 
