@@ -20,7 +20,7 @@ It does not define platforms, services, networks, guarantees, or behavior beyond
 
 ```text
 protocol/  -> TAMOS protocol specification
-sky/       -> Example folder containing JSON files
+example/   -> Example JSON only implementation
 server/    -> Example API implementation
 client/    -> Example CLI
 docs/      -> Conceptual notes
