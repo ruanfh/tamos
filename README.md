@@ -32,6 +32,8 @@ dev-notes/ -> Drafts and internal material
 Early draft (v0.x).
 Expect changes.
 
+> Earlier commits reflect exploratory drafts and design evolution.
+
 ## Why
 
 See [docs/why.md](docs/why.md) (non-normative).
