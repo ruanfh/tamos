@@ -34,7 +34,7 @@ You can fully automate endpoint testing using a test framework (e.g., pytest) an
 - Maintain a suite of example files for regression testing.
 
 ### Folders
-
+```text
 conformance/
 │
 ├── cases/
@@ -96,6 +96,7 @@ conformance/
     ├── validate_stored.py
     ├── validate_archive.py
     └── helpers.py
+```
 
 
 
