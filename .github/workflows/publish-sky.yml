@@ -1,4 +1,4 @@
-name: Publish sky folder
+name: Publish example folder
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
         run: |
           rm -rf public
           mkdir public
-          cp -r sky public/
+          cp -r example public/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
