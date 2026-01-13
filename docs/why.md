@@ -10,6 +10,38 @@ TAMOS aims to offer a simple, structured way for publishers to share resources a
 
 ---
 
+## Schema rationale
+
+### Why only one schema?
+
+The only required object schema is the Gem schema, which defines three fields:
+- url
+- description
+- author (optional)
+Once the Gem is validated and available at the desired environment (Sky) it is called a Star.
+
+So why not a schema for the Star? And the answer is: flexibility. By not specifying which additional and metadata fields are required each implementation is free to use what better suits its needs. The tradeoff is that the protocol looses interoperability which is not a concern because in theory a whole Sky can be a Star inside another Sky.
+
+### Why url?
+
+There must be a concrete resource that is the subject about which the description talks.
+The whole point is for people to be able to find the resource, that makes the url essential.
+
+### Why description?
+
+A description is as free as it can get for LLMs to interpret.
+Instead of trying to over complicate with a tag system, let the LLMs do the tagging.
+
+A description is also the most intuitive way for people to express themselves, they only have to type what is on their mind.
+
+### Why author?
+
+The author could even be omitted because in this layer as there is no way of authenticating it.
+But by keeping it as optional it is standardized for later layers to not conflict on the label.
+In other words, it's just to define which term to use, not source, not submitter, not creator, not provider; but always author.
+
+---
+
 ## Structure, Not Just Links
 
 A URL gives access, but not context. TAMOS groups resources into **Skies**, making collections explorable and meaningful.
