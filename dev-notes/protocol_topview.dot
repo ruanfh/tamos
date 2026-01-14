@@ -1,0 +1,15 @@
+digraph ProtocolTopView {
+    layout=neato;
+    bgcolor="#222831";
+    node [shape=ellipse, style=filled, fillcolor="#393e46", fontcolor="#eeeeee", fontsize=16, width=2, height=1];
+    edge [color="#00adb5", penwidth=2, fontcolor="#eeeeee", fontsize=14];
+
+    WestHorizon [label="West-Horizon", pos="0,0!"];
+    Star        [label="Star\n(API or File)",         pos="2,2!"];
+    EastHorizon [label="East-Horizon", pos="4,0!"];
+    Gem         [label="Gem\n(url + description)", pos="2,-2!"];
+
+    Gem -> EastHorizon;
+    EastHorizon -> Star;
+    Star -> WestHorizon;
+}
